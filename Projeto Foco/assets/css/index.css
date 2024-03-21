@@ -1,0 +1,192 @@
+/* -----====[ FONTES ]====----- */
+
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    --titles-fonts: "Shrikhand", serif;
+    --geral-fonts: "Sansita", sans-serif;
+}
+/* -----====[ /FONTES ]====----- */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--geral-fonts);
+}
+
+/* -----====[ CLASSES GENÉRICAS ]====----- */
+
+.flex-row-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-row-space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-row-space-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.flex-column-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* -----====[ /CLASSES GENÉRICAS ]====----- */
+
+/* -----====[ ESTILIZAÇÃO GERAL ]====----- */
+
+header, main, footer {
+    padding: 20px 100px;
+}
+main {
+    padding-bottom: 0;
+}
+.logo img {
+    width: 200px;
+    transition: linear transform 0.1s;
+}
+.logo img:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+.menu-options {
+    width: 40%;
+    background-color: #ff709e;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+.menu-options a {
+    width: 100%;
+    text-decoration: none;
+    color: #fffaf4;
+}
+.menu-options a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.banner div {
+    width: 40%;
+}
+.banner-img img {
+    width: 500px;
+}
+.banner-text h1 {
+    color: #ff709e;
+    font-family: var(--titles-fonts);
+    font-size: 32px;
+}
+.produtos {
+    width: 100vw;
+    margin-top: 100px;
+    padding: 50px 100px 50px 0;
+    background-color: #ff709e;
+}
+.produtos h1 {
+    font-family: var(--titles-fonts);
+    font-size: 38px;
+    color: #ffffff;
+}
+.produto {
+    padding: 20px;
+    margin: 20px;
+    transition: linear transform 0.1s;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}   
+.produto img {
+    width: 150px;
+}
+.produto h1 {
+    font-family: var(--titles-fonts);
+    font-size: 24px;
+    color: #ff709e;
+}
+.produto a {
+    text-decoration: none;
+    margin: 30px 0;
+    padding: 10px;
+    border-radius: 10px ;
+    background-color: #ff709e;
+    color: #ffffff;
+    transition: linear transform 0.1s;
+}
+.produto a:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.lista-produtos {
+    flex-wrap: wrap;
+}
+
+footer {
+    background-color: #8d5434;
+}
+.footer-logo img {
+    width: 400px;
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 50px;
+    border-radius: 1000px;
+}
+.footer-infos {
+    margin-right: 200px;
+}
+.footer-infos h3 {
+    font-family: var(--titles-fonts);
+    font-size: 34px;
+    color: #ffffff;
+}
+.footer-infos p {
+    padding: 5px 0;
+    font-size: 22px;
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+    margin: 20px 0;
+    transition: linear transform 0.1s;
+}
+.footer-infos p:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+.footer-infos img{
+    width: 40px;
+    padding-left: 10px;
+}
+#copy {
+    font-size: 16px;
+    border: 0;
+    cursor:auto;
+    transition: none;
+}
+#copy:hover {
+    transform: scale(1.0);
+}
+/* -----====[ /ESTILIZAÇÃO GERAL ]====----- */
